@@ -1,0 +1,104 @@
+
+    
+    .main-container{
+        background-color:$pgColor;
+        .page_content{
+            padding: 130px 50px;
+            min-height: 100vh;
+            min-width: 100%;
+            @media(max-width:767px) {
+                padding: 130px 15px;
+           }
+            .section_title{
+                font-size: 43px;
+                color: $whiteColor;
+                margin-bottom: 50px;
+                margin-top: 150px;
+            }  
+            
+            .no_date{
+                color: $gray;
+                font-size: 20px;
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+            }
+            .movie_title{
+                color: white;
+                font-size: 18px;
+                margin: 10px 0px;
+            }
+            .movie_genres{
+                color: $gray;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .imdb_rating{
+                position: absolute;
+                right: 0;
+                color: white;
+                font-size: 14px;
+                strong{
+                    color: $readMainColor;
+                    margin-right: 10px;
+                }
+
+    
+
+            }
+
+        }
+    }
+    .owl-carousel {
+        .owl-stage-outer{
+            .owl-stage{
+                .owl-item{
+                    width: 300px !important;
+                    margin-right: 45px;
+                }
+            }
+        
+
+        }
+    }
+    .owl-theme {
+    .owl-nav{
+        .owl-prev{
+            left: 0;
+            margin: 5px;
+            background: transparent;
+            display: inline-block;
+            cursor: pointer;
+            color: #413f3f;
+            font-size: 40px;
+            border-radius: 50%;
+            padding: 13px;
+            position: absolute;
+            top: 40%;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #413f3f;
+        }
+        .owl-next{
+            right: 0;
+            margin: 5px;
+            background: transparent;
+            display: inline-block;
+            cursor: pointer;
+            color: #413f3f;
+            font-size: 40px;
+            border-radius: 50%;
+            padding: 13px;
+            position: absolute;
+            top: 40%;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #413f3f;
+        }
+        &:hover{
+            background-color: #413f3f;
+            color: white;
+        }
+    }
+    }

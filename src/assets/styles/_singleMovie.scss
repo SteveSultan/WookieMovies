@@ -1,0 +1,80 @@
+
+        .single_movie{
+            .header_cover{
+                 .backdrop_img{
+                    width: 100%;
+                    height: 100vh;
+                    @media(max-width:767px) {
+                        height: fit-content;
+                   }
+            }
+            
+            .overlay{
+                padding:160px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: rgb(0,0,0);
+                background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8239670868347339) 60%, rgba(0,0,0,0.14889705882352944) 100%);
+                @media(max-width:767px) {
+                    position: absolute;
+                    bottom: unset;
+                    padding: 120px 15px;
+                    padding-bottom: 0;
+               }
+                .poster_img{
+                    border: 3px solid $whiteColor;
+                    max-width: 350px;
+                    max-height: 520px;
+                   
+                }
+                .movie_title{
+                    color: $whiteColor;
+                    font-size: 29px;
+                    font-weight: bolder;
+                    margin-top: 15px;
+                    @media(max-width:767px) {
+                        font-size: 18px;
+                   }
+                    
+                    .imdb_rating{
+                        color: $readMainColor;
+                        margin-right: 15px;
+                        margin-left: 30px;
+                    }
+                    span{
+                        color: $whiteColor;
+                        margin-right: 10px;
+                        font-size: 20px;
+                        font-weight: normal;
+                    }
+                
+                }
+                .star-rating{
+                    display: none;
+                    .star{
+                        @media(max-width:767px) {
+                            font-size: 14px !important;
+                       }
+                    }
+                }
+                .movie_details{
+                    color: $whiteColor;
+                    font-size: 20px;
+                    @media(max-width:767px) {
+                        font-size: 13px !important;
+                   }
+                }
+                .movie_overview{
+                    color: $gray;
+                    font-size: 18px;
+                    line-height: 1.7;
+                }
+            
+            }
+            }
+           
+
+}

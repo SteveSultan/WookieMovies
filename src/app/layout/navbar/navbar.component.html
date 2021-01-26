@@ -1,0 +1,16 @@
+<p  class=nav_header>
+    <mat-toolbar class="row">
+        <div class="col-md-6 col-sm-12">
+            <a href="/">
+            <span class="nav_header_title ">Wookie Movies</span>
+            </a>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="search_component">
+                <input [(ngModel)]="Keyword" type="text" placeholder="Type and hit enter to search"  name="search" (keyup.enter)="OnEnter()">
+                <div class="search"></div>
+
+            </div>
+        </div>
+    </mat-toolbar>
+</p>

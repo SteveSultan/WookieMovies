@@ -1,0 +1,28 @@
+
+
+    <div class="container-fluid">
+        <div class="page_content">
+        
+        
+                <div *ngIf="movies.length !=0" class="row">
+                    <div  class="col-md-3 col-12" *ngFor="let movie of movies">
+                            <div class="card" [id]="movie.id">
+                                <a href="movie/{{movie.slug}}">
+                                <img [src]="movie.poster" [alt]="movie.title" [title]="movie.title">
+                                <h3 class="movie_title">{{movie.title}}</h3>
+                                <div class="d-flex">
+                                    <p class="movie_genres">{{movie.genres}}</p>
+                                    <p class="imdb_rating"><strong>IMDB </strong> {{movie.imdb_rating}}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div *ngIf="movies.length ==0" class="page_content ">
+                    <p class="no_date">No items found </p>
+                </div>
+            </div>
+               
+            </div>
+        

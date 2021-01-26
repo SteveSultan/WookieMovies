@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: "wooden";
+    src: local("wooden"), url(../fonts/CFOneTwoTrees-Regular.ttf) format("truetype");
+}
+
+// Import pages style
+@import '_variables';
+@import 'header';
+@import '_mainPage';
+@import 'singleMovie'

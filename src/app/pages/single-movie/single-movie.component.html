@@ -1,0 +1,22 @@
+<div class="single_movie">
+    <div class="header_cover">
+        <img class="backdrop_img" src="{{Movie.backdrop}}" />
+        <div class="container-fluid">
+             <div class="overlay row">
+            <div class="header_content col-md-3 col-sm-12">
+                <img class="poster_img" src="{{Movie.poster}}"/>
+            </div>
+            
+            <div class="header_content col-md-9  col-sm-12">
+                <h3 class="movie_title">{{Movie.title}} <strong class="imdb_rating">IMDB </strong> <span>( {{Movie.imdb_rating}} )</span></h3>
+                <star-rating class="float-right star-rating" [value]=Movie.imdb_rating [totalstars]=10 [readonly]=true checkedcolor="gold" uncheckedcolor="gray" size="40px" ></star-rating>
+                <h5 class="movie_details">{{FormattedDate}} | {{Movie.length}} | {{Movie.director}} <br/></h5>
+                <h5 class="movie_details">Cast : {{Movie.cast}} <br/></h5>
+                <p class="movie_overview">{{Movie.overview}}</p>
+            </div>
+
+        </div>
+        </div>
+       
+    </div>
+</div>

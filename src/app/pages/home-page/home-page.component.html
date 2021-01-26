@@ -1,0 +1,18 @@
+<app-header class="header"></app-header>
+<ng-container>
+    <div class="container-fluid">
+        <div class="page_content">
+            <h2 class="section_title">Action</h2>
+            <app-carousel [movies]="ActionMoviesList"></app-carousel>
+            <h2 class="section_title">Drama</h2>
+            <app-carousel [movies]="DramaMoviesList"></app-carousel>
+            <h2 class="section_title">Animation</h2>
+            <app-carousel [movies]="AnimationMoviesList"></app-carousel>
+            <h2 class="section_title">Crime</h2>
+            <app-carousel [movies]="CrimeMoviesList"></app-carousel>
+            <h2 class="section_title">Adventure</h2>
+            <app-carousel [movies]="AdventureMoviesList"></app-carousel>
+        </div>
+       
+    </div>
+</ng-container>
